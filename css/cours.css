@@ -1,0 +1,133 @@
+.cours-header
+{
+    background: transparent url(../image/code.jpg) ;
+    opacity: .6;
+    height: 50vh;
+
+}
+
+section h1.titel
+{
+    font-size: 70px;
+    line-height: 80px;
+    text-transform: uppercase;
+    text-align: center;
+
+    
+}
+
+/* ---------------- cours -------------------*/
+
+div.cours-elements
+{
+    color: #373737;
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+    position: relative;
+    flex: 1 0 29%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+div.cours-elements:hover
+{
+    transform: scale(1.15);
+    box-shadow: 0 8px 16px 0 gold, 0 6px 20px 0 gold;
+    transition: 0.2s;
+}
+
+div.cours-items
+{
+    color: #373737;
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+div.cours-items:hover
+{
+    transform: scale(1.15);
+    box-shadow: 0 8px 16px 0 gold, 0 6px 20px 0 gold;
+    transition: 0.2s;
+}
+
+div.cours-group
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20% 0 20%;
+}
+
+div.cours-group-index
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#cours
+{
+    padding: 15px 15px 15px;
+
+}
+
+div#cours
+{
+    padding: 15px 15px 15px;
+
+}
+
+.java{background: url(../image/java.png);}
+.c{ background: url(../image/image_C.png);}
+.web-development{background: url(../image/web_development.png);}
+.python{ background: url(../image/python.jpg);}
+.c_sharp{ background: url(../image/csharp.png);}
+.jsp{background: url(../image/java_server_page.jpg);}
+
+.overlay
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+}
+
+span.titel
+{
+    position: relative;
+    color: #373737;
+    background-color: #fff;
+    top: 20px;
+    float: right;
+    padding: 12px;
+    font-size: 22px;
+    font-weight: bolder;
+
+}
+
+span.level
+{
+    position: relative;
+    color: #373737;
+    background-color: orange;
+    padding: 20px;
+    font-size: 16px;
+    top: 190px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+span.level:hover
+{
+    color:#fff;
+}
+
+

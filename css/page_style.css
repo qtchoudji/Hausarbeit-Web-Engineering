@@ -1,0 +1,300 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.selected {
+    background-color: blue;
+}
+
+
+
+.toggle
+{
+    display: none;
+
+}
+section
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 20vh;
+    padding: 150px 100px 100px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+section img
+{
+    max-width: 400px;
+    min-height: 500px;
+    margin-left: 30px;
+}
+
+section h2
+{
+    font-size: 2em;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+section li
+{
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    margin-top: 30px;
+
+}
+
+section#map div#element_list
+{
+    color: #000;
+    background-color: #000;
+    font-size: 18px;
+}
+
+section p
+{
+    margin: 10px;
+    font-size: 18px; 
+}
+
+section a 
+{
+    display: inline-block;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    background: #111;
+    color: #fff;
+    margin-top: 20px;
+}
+
+section button 
+{
+    display: inline-block;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    background: #111;
+    color: #fff;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+section button:hover
+{
+    background: #205aff;
+}
+
+section:nth-child(odd)
+{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    color: #fff;
+
+}
+
+
+
+
+@media(max-width: 992px) and (min-width: 400px)
+{
+    section
+    {
+        padding: 100px 50px 50px;
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    
+
+    div.cours-group-index
+    {
+        flex-wrap:wrap  ;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    div.cours-group
+    {
+        flex-wrap:wrap  ;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+   
+
+    div.cours-elements
+{
+    color: #373737;
+    height: 120px;
+    width: 250px;
+    margin: 15px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size:100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+span.titel
+{
+    position: relative;
+    color: #373737;
+    background-color: #fff;
+    top: 0.5px;
+    float: right;
+    padding: 5px;
+    font-size: 100%;
+    font-weight: bolder;
+
+}
+
+span.level
+{
+    position: relative;
+    color: #373737;
+    background-color: orange;
+    padding: 5px;
+    font-size: 50%;
+    top: 94px;
+    cursor: pointer;
+}
+
+div.overlay
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    top: 0;
+    
+
+}
+
+section h1.titel
+{
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+
+    section img 
+    {
+        margin: 50px 0 0;
+        max-width: 100%;
+
+    }
+
+    section h2 
+    {
+        text-align: left;
+
+    }
+
+    header ul
+    {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 50px 100px;
+        text-align: center;
+        overflow: auto;
+        transition: 0.5s;
+        background: #000;
+        flex-direction: column;
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    header.active ul
+    {
+        opacity: 1;
+        top: 80px;
+        transform: translateY(0);
+    }
+
+    header ul li a
+    {
+        margin: 5px 0;
+        font-size: 24px;
+    }
+    .toggle
+    {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .toggle::before
+    {
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        box-shadow: 0 10px 0 #fff;
+        transition: 0.5s;    
+    }
+
+    .toggle::after
+    {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        transition: 0.5s;    
+    }
+
+    header.active .toggle::before
+    {
+        top: 14px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 #fff;
+    }
+
+    header.active .toggle::after
+    {
+        bottom: 14px;
+        transform: rotate(-45deg);
+        box-shadow: 0 0 0 #fff;
+    }
+
+    .footer-elements
+    {
+        width: 50%;
+    }
+}
